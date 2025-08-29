@@ -506,3 +506,121 @@ a:hover {
  .span{
     color: var(--primary-color);
  }
+
+ /*resposive */
+
+ /* ================= RESPONSIVE DESIGN ================= */
+
+/* Large Tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  .hero-section .content {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .hero-section .hero-img-w {
+    width: 100%;
+    height: auto;
+    padding: 0;
+  }
+
+  .new-arrival .content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .new-arrival .section-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .product .products-container {
+    padding: 40px;
+  }
+
+  .product .products-container .product-box {
+    flex: 0 0 calc(50% - 20px); /* 2 box ek row me */
+  }
+}
+
+/* Tablets and Small Screens (max-width: 768px) */
+@media (max-width: 768px) {
+  header .nav-bar {
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+  }
+
+  .nav-bar .nav-menu {
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product .products-container .product-box {
+    flex: 0 0 100%; /* 1 box ek row me */
+  }
+
+  .discount-section {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  input {
+    width: 100%;
+    height: 55px;
+  }
+
+  .info-details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .info-img {
+    width: 200px;
+  }
+}
+
+/* Mobile Screens (max-width: 480px) */
+@media (max-width: 480px) {
+  .section-title {
+    font-size: var(--font-large);
+  }
+
+  .hero-section .hero-details .title {
+    font-size: var(--font-xlarge);
+  }
+
+  .hero-section .hero-details .description {
+    font-size: var(--font-normal);
+  }
+
+  button,
+  .discount-section .sub-btn {
+    width: 100%;
+    padding: 12px;
+  }
+
+  .product-text {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .testimonial-card {
+    padding: 15px;
+  }
+
+  .testimonial-card img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .footer {
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+}
